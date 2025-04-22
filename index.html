@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Conscience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Conscience</h1>
+        <div id="poll">
+            <h2 id="question">Loading question...</h2>
+            <div id="options">
+                <!-- Options will be loaded here -->
+            </div>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <ul id="results-list">
+                <!-- Results will be loaded here -->
+            </ul>
+            <p id="total-votes">Total Votes: 0</p>
+        </div>
+        <p id="error-message" style="color: red; display: none;"></p>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html> 

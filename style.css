@@ -1,0 +1,132 @@
+body {
+    background-color: #0d0d0d; /* Near black */
+    color: #a0a0a0; /* Medium-light grey text */
+    font-family: 'Courier New', Courier, monospace; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    background-color: #1c1c1c; /* Very dark grey */
+    padding: 40px 60px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.03), /* Very subtle white glow */
+                inset 0 0 15px rgba(0, 0, 0, 0.4); /* Inner shadow */
+    border: 1px solid #333; /* Darker border */
+    max-width: 600px;
+}
+
+h1 {
+    color: #cccccc; /* Light grey */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1), /* Subtle white text glow */
+                 0 0 15px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+    margin-bottom: 30px;
+    font-size: 3em;
+    letter-spacing: 3px; /* Increased spacing */
+    font-weight: normal; /* Less bold */
+}
+
+h2 {
+    color: #999999; /* Medium grey */
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #444; /* Slightly more visible dashed line */
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+#options button {
+    background-color: #282828; /* Darker button */
+    color: #b0b0b0; /* Medium grey text */
+    border: 1px solid #404040; /* Dark grey border */
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border-color 0.3s;
+    border-radius: 4px;
+    font-family: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+#options button:hover {
+    background-color: #353535; /* Slightly lighter dark grey on hover */
+    color: #ffffff; /* White text on hover */
+    border-color: #666666; /* Lighter border on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05), /* Faint glow */
+                0 3px 7px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+}
+
+#results {
+    margin-top: 30px;
+    background-color: #111; /* Near black background for results */
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #2a2a2a;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow */
+}
+
+#results h2 {
+    color: #aaaaaa;
+    border-bottom-color: #383838;
+}
+
+#results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#results-list li {
+    background-color: #222; /* Darker list items */
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    color: #999; /* Dimmer text */
+    border: 1px solid #333;
+    transition: background-color 0.3s;
+}
+
+#results-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Optional: slight highlight on hover for list items */
+#results-list li:hover {
+    background-color: #282828;
+}
+
+#results-list li span:first-child {
+    font-weight: normal; /* Less emphasis */
+    color: #c0c0c0; /* Lighter grey for option text */
+    flex-basis: 65%; /* Give more space to option text */
+    margin-right: 10px;
+}
+
+#results-list li span:last-child {
+    font-weight: bold;
+    color: #dddddd; /* Bright grey for percentage */
+    text-align: right;
+    flex-basis: 35%;
+}
+
+#total-votes {
+    margin-top: 25px;
+    font-size: 0.95em; /* Slightly smaller */
+    color: #777; /* Darker grey */
+    text-align: right;
+}
+
+#error-message {
+    margin-top: 20px;
+    color: #a83232; /* Keep a muted red for errors, but darker */
+    font-weight: bold;
+} 
